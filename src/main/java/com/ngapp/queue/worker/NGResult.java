@@ -1,7 +1,11 @@
 package com.ngapp.queue.worker;
 
-public interface NGResult<T> {
-	boolean getStatus();
-	T getResult();
+public interface NGResult{
 	
+	//FAIL or SUCCESS
+	boolean getStatus();
+	
+	String getReason();
+	
+	Object getReturn();
 }

@@ -7,6 +7,6 @@ package com.ngapp.queue.worker;
  * @author QuanLe
  *
  */
-public interface InternalQueueWorker extends QueueWorker {
-
+public interface InternalNGWorker extends NGWorker {
+	void accept(NGTask task);
 }

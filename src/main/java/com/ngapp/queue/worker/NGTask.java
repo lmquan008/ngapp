@@ -1,6 +1,7 @@
 package com.ngapp.queue.worker;
 
 import java.io.Serializable;
+import java.util.concurrent.Callable;
 
 /**
  * 
@@ -12,5 +13,8 @@ import java.io.Serializable;
 public interface NGTask extends Serializable{
 	void execute();
 	void describe();
-	NGResult getResult();
+	void setCallBack(CallBack callBack);
+	CallBack getCallBack();
+	
+	
 }

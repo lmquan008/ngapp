@@ -8,8 +8,7 @@ package com.ngapp.queue.worker;
  * @author QuanLe
  *
  */
-public interface QueueWorker extends Runnable{
-	void process();
-	void complete();
-	void failed();
+public interface NGWorker extends Runnable{
+	void startWorking();
+	
 }	
